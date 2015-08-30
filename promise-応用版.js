@@ -65,7 +65,7 @@
                     record: {"在庫量": {"value": updateQuantity}}
                 };
 
-                return kintone.api(
+                kintone.api(
                     kintone.api.url('/k/v1/record', true),
                     'PUT',
                     params
